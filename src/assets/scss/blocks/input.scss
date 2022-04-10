@@ -1,0 +1,27 @@
+.input {
+  padding: 15px 25px;
+
+  background: #fff;
+  border: none;
+  border-radius: 30px;
+
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $light-gray;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $light-gray;
+  }
+
+  &--search {
+    padding-left: 75px;
+
+    background-image: url('../images/filter/search.svg');
+    background-position: 25px;
+    background-repeat: no-repeat;
+  }
+}

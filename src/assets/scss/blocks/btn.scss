@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  padding: 12px 105px;
+
+  background: $accent;
+  cursor: pointer;
+  border: 2px solid $accent;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #ffffff;
+
+  letter-spacing: 0.12em;
+
+  transition: all 0.3s linear;
+
+  &:hover {
+    background: none;
+    color: $accent;
+  }
+
+  &--submit {
+    padding: 10px 16px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #fff;
+    background: $accent;
+
+    &:hover {
+      background: none;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.crumbs {
+  padding: 40px 0;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: $light-gray;
+
+    &:not(:last-child) {
+      position: relative;
+      padding-right: 25px;
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        content: '';
+
+        width: 8px;
+        height: 11px;
+
+        background: url('../images/crumbs.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}

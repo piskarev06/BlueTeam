@@ -5,6 +5,7 @@
   background: $accent;
   cursor: pointer;
   border: 2px solid $accent;
+  border-radius: 30px;
 
   font-weight: 400;
   font-size: 18px;
@@ -19,6 +20,10 @@
   &:hover {
     background: none;
     color: $accent;
+  }
+
+  &--big {
+    padding: 12px 145px;
   }
 
   &--submit {

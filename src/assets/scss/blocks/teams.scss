@@ -1,0 +1,111 @@
+.teams {
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @include breakpoint(480px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    max-height: calc(100vh - 400px);
+    min-height: calc(100vh - 400px);
+    max-width: 1160px;
+    overflow-y: auto;
+
+    margin: 0 auto 35px auto;
+
+    @include breakpoint(480px) {
+      max-height: calc(100vh - 385px);
+      min-height: calc(100vh - 385px);
+
+      margin-bottom: 50px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 3px;
+      height: 7px;
+      background-color: #f7f7f7;
+
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #e6eaef;
+    }
+
+    & .list {
+      &__item {
+        padding: 20px 30px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background: #fff;
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+
+      &__team {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        @include breakpoint(480px) {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+
+      &__name {
+        font-weight: 600;
+        line-height: 30px;
+      }
+
+      &__tasks {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        @include breakpoint(768px) {
+          flex-direction: column;
+          gap: 7px;
+        }
+      }
+
+      &__count {
+        padding: 1px 13px;
+
+        font-weight: 600;
+        font-size: 12px;
+
+        color: #fff;
+
+        background: $accent;
+        border-radius: 60px;
+      }
+
+      &__active-tasks {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  &__btn {
+    @include breakpoint(768px) {
+      width: 100%;
+      padding: 12px 1px;
+    }
+  }
+}

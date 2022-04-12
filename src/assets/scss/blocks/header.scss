@@ -27,6 +27,10 @@
     align-items: center;
     gap: 30px;
 
+    @include breakpoint(768px) {
+      display: none;
+    }
+
     & .nav__link {
       position: relative;
 

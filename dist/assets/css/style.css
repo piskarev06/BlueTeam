@@ -613,6 +613,11 @@ img {
     font-size: 18px;
     line-height: 25px;
     color: #fff;
+    transition: all 0.3s linear;
+}
+
+.header__list .nav__link:hover {
+    color: #e5e5e5;
 }
 
 .header__list .nav__link.teams {
@@ -724,6 +729,12 @@ img {
 .chats__left {
     max-width: 350px;
     width: 100%;
+}
+
+@media (max-width: 992px) {
+    .chats__left {
+        max-width: 100%;
+    }
 }
 
 .chats__input {
@@ -856,10 +867,18 @@ img {
 }
 
 .chats__dialog {
+    position: relative;
     padding: 20px 35px;
     width: 100%;
+    height: calc(100vh - 205px);
     border-radius: 10px;
     background: #fff;
+}
+
+@media (max-width: 992px) {
+    .chats__dialog {
+        display: none;
+    }
 }
 
 .chats__dialog .dialog__top {
@@ -906,8 +925,9 @@ img {
 }
 
 .chats__dialog .dialog__messages {
-    max-height: calc(100vh - 340px);
+    max-height: calc(100vh - 426px);
     overflow-y: auto;
+    margin-bottom: 30px;
 }
 
 .chats__dialog .dialog__messages::-webkit-scrollbar {
@@ -940,6 +960,37 @@ img {
     margin-bottom: 15px;
 }
 
+.chats__dialog .dialog__send {
+    position: absolute;
+    bottom: 20px;
+    right: 35px;
+    left: 35px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.chats__dialog .dialog__input {
+    width: 100%;
+    background: #f5f7fa;
+}
+
+.chats__dialog .dialog__btn {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.chats__dialog .dialog__btn svg g path {
+    transition: all 0.2s linear;
+}
+
+.chats__dialog .dialog__btn:hover svg g path {
+    fill: #425feb;
+}
+
 .filter__block {
     display: -ms-flexbox;
     display: flex;
@@ -948,6 +999,23 @@ img {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+
+.filter__left {
+    cursor: pointer;
+}
+
+.filter__by {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-right: 13px;
+}
+
+.filter__option {
+    font-size: 16px;
+    line-height: 22px;
+    color: #979899;
 }
 
 .filter__settings {

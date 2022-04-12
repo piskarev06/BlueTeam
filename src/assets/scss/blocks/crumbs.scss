@@ -1,6 +1,10 @@
 .crumbs {
   padding: 40px 0;
 
+  @include breakpoint(768px) {
+    padding: 20px 0;
+  }
+
   &__list {
     display: flex;
   }

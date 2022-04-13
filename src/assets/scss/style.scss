@@ -41,6 +41,28 @@ img {
   line-height: 44px;
 }
 
+.section__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: calc(100vh - 205px);
+
+  @include breakpoint(992px) {
+    display: unset;
+    height: unset;
+  }
+}
+
+.section__block {
+  padding: 35px 30px;
+
+  text-align: center;
+
+  border-radius: 10px;
+  background: #fff;
+}
+
 /* Blocks */
 @import 'blocks/container';
 @import 'blocks/sign';
@@ -51,3 +73,5 @@ img {
 @import 'blocks/input';
 @import 'blocks/teams';
 @import 'blocks/create';
+@import 'blocks/new-task';
+@import 'blocks/navigation';

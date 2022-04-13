@@ -1,0 +1,29 @@
+.navigation {
+  padding: 24px 24px 18px;
+
+  max-width: 965px;
+  width: 100%;
+
+  margin: 0 auto;
+
+  background: #ffffff;
+  border-radius: 40px 40px 0px 0px;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  &__img {
+    & svg path {
+      transition: all 0.3s linear;
+    }
+
+    &:hover {
+      & svg path {
+        fill: $accent;
+      }
+    }
+  }
+}

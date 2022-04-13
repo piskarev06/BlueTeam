@@ -17,6 +17,63 @@
     color: $light-gray;
   }
 
+  &__wrapper {
+    position: relative;
+
+    padding: 30px;
+
+    max-width: 380px;
+    width: 100%;
+
+    background: #edeef0;
+    border-radius: 30px;
+
+    margin: 0 auto;
+  }
+
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    max-width: 370px;
+    width: 100%;
+
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  &__img {
+    margin-bottom: 10px;
+  }
+
+  &__text,
+  &__or {
+    display: block;
+
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $light-gray;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+
+  &__or {
+    margin-bottom: 70px;
+  }
+
+  &__btn {
+    @include breakpoint(768px) {
+      padding: 12px 1px;
+
+      width: 100%;
+    }
+  }
+
   &--search {
     padding-left: 75px;
 

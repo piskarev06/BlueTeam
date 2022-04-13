@@ -1,4 +1,4 @@
-.create {
+.new-task {
   &__title {
     margin-bottom: 60px;
 
@@ -7,15 +7,17 @@
     }
   }
 
+  &__block {
+    margin-bottom: 55px;
+  }
+
   &__form {
     & .form {
       &__wrapper {
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
         justify-content: center;
         gap: 105px;
-
-        margin-bottom: 170px;
 
         @include breakpoint(992px) {
           flex-direction: column;
@@ -30,6 +32,12 @@
         width: 100%;
       }
 
+      &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
       &__item {
         display: flex;
         align-items: flex-start;
@@ -42,9 +50,12 @@
       }
 
       &__btn {
-        @include breakpoint(768px) {
-          width: 100%;
-          padding: 12px 1px;
+        padding: 12px 1px;
+
+        width: 100%;
+
+        @include breakpoint(992px) {
+          margin-top: 40px;
         }
       }
     }

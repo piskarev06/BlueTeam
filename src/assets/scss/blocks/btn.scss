@@ -40,4 +40,16 @@
       background: none;
     }
   }
+
+  &--outlined {
+    color: $black;
+
+    background: #fff;
+
+    &:hover {
+      color: #fff;
+
+      background: $accent;
+    }
+  }
 }

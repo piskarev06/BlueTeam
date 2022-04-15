@@ -1,0 +1,55 @@
+.team-settings {
+  &__block {
+    margin-bottom: 55px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 55px;
+  }
+
+  &__team {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & team__name {
+      font-weight: 600;
+      line-height: 30px;
+    }
+  }
+
+  &__form {
+    & .form {
+      &__top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        margin-bottom: 60px;
+      }
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  }
+
+  &__label {
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  &__input {
+    background: #edeef0;
+
+    max-width: 100%;
+    width: 470px;
+  }
+}
